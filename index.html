@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - PlantLog</title>
+  <meta name="description" content="Privacy Policy for PlantLog: Smart Houseplant Care & Plant Doctor. 100% local-first, privacy-focused botanical companion.">
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0A130D;
+      --card-bg: rgba(19, 34, 25, 0.85);
+      --card-border: rgba(82, 183, 136, 0.15);
+      --text-main: #F4F9F5;
+      --text-muted: #8FA799;
+      --accent-emerald: #2D6A4F;
+      --accent-mint: #52B788;
+      --accent-lime: #74C69D;
+      --accent-water: #38BDF8;
+      --accent-gradient: linear-gradient(135deg, #74C69D 0%, #52B788 50%, #2D6A4F 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .glow-circle {
+      position: fixed;
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(45, 106, 79, 0.20) 0%, rgba(82, 183, 136, 0.08) 50%, transparent 70%);
+      filter: blur(90px);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .glow-1 { top: -160px; right: -160px; }
+    .glow-2 { bottom: -180px; left: -160px; }
+
+    header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--card-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(10, 19, 13, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(82, 183, 136, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--accent-mint); }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      width: 100%;
+    }
+
+    .policy-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 24px;
+    }
+
+    .policy-tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-mint);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .highlight-card h3 {
+      color: var(--accent-mint);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-card p {
+      color: var(--text-main);
+      font-size: 0.98rem;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #FFFFFF;
+      letter-spacing: -0.3px;
+    }
+
+    p {
+      color: #D1DFD7;
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 12px 0 18px 24px;
+      color: #D1DFD7;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #FFFFFF;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(19, 34, 25, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+    }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: rgba(45, 106, 79, 0.25);
+      color: var(--accent-mint);
+      font-weight: 700;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    td {
+      border-bottom: 1px solid rgba(82, 183, 136, 0.08);
+      color: #D1DFD7;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 36px 24px;
+      text-align: center;
+      background: rgba(10, 19, 13, 0.95);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent-mint);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-circle glow-1"></div>
+  <div class="glow-circle glow-2"></div>
+
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
+        <img src="assets/app_icon.png" alt="PlantLog Icon" class="logo-icon">
+        <span class="logo-text">PlantLog</span>
+      </a>
+      <a href="index.html" class="nav-link">← Back to Overview</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="policy-header">
+      <span class="policy-tag">Official Legal Document</span>
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Last Updated: October 27, 2026 • Effective Date: October 27, 2026</p>
+    </div>
+
+    <div class="highlight-card">
+      <h3>🌿 Summary: 100% Local-First & Privacy by Design</h3>
+      <p>
+        <strong>PlantLog</strong> is designed from the ground up to respect your digital privacy. All your plant details, custom names, care logs, notes, and photos are stored <strong>100% locally on your personal device</strong>. We do not require account registration, and your private plant photos and journals are never uploaded to any remote server or cloud storage.
+      </p>
+    </div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy explains how <strong>PlantLog</strong> ("we", "our", or "the App"), developed by <strong>ProgrammerCrow</strong>, handles information when you use our mobile application on iOS and Android devices.
+      </p>
+      <p>
+        We believe that caring for your houseplants should be a joyful, private, and uninterrupted experience. We are committed to transparency regarding our minimal data practices.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Data Collection & Storage Architecture</h2>
+      <p>
+        Unlike cloud-dependent services, PlantLog operates on an offline-first architecture:
+      </p>
+      <ul>
+        <li><strong>No Account Required:</strong> You do not need to register with an email, phone number, social media account, or password.</li>
+        <li><strong>Local Device Storage:</strong> Your houseplants' names, locations, watering schedules, care histories, and user notes are saved strictly on your device using private local storage (Hive and SharedPreferences).</li>
+        <li><strong>Local Photos Sandbox:</strong> When you add or update photos of your plants, images are copied directly into the app’s secure local documents container. Photos never leave your device and are never transmitted to external cloud servers.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Device Permissions & How They Are Used</h2>
+      <p>
+        PlantLog requests only the minimal operating system permissions strictly necessary to provide its core features:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Purpose & Usage</th>
+              <th>Data Transfer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Camera</strong></td>
+              <td>Allows you to take live photos of your houseplants for visual growth tracking and avatar identification.</td>
+              <td>100% Local. Never transmitted externally.</td>
+            </tr>
+            <tr>
+              <td><strong>Photo Library</strong></td>
+              <td>Allows you to select existing plant photos from your gallery.</td>
+              <td>100% Local. Never transmitted externally.</td>
+            </tr>
+            <tr>
+              <td><strong>Notifications</strong></td>
+              <td>Allows the app to schedule local watering, fertilizing, misting, and care alarms at your preferred times.</td>
+              <td>100% Local OS alerts. No remote push server used.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services & Advertising (Google AdMob)</h2>
+      <p>
+        To keep PlantLog accessible and continuously updated with new botanical species and disease diagnosis guides, the app displays non-intrusive advertisements served by <strong>Google Mobile Ads (AdMob)</strong>.
+      </p>
+      <p>
+        In compliance with Apple's App Store Nutrition Labels and Google Play Data Safety standards, Google AdMob may collect and process certain non-personally identifiable technical information:
+      </p>
+      <ul>
+        <li><strong>Identifiers:</strong> Device advertising identifiers (IDFA on iOS, AAID on Android) or instance IDs used strictly for ad delivery and fraud prevention.</li>
+        <li><strong>Usage & Interaction Data:</strong> Ad views, clicks, and basic user interactions with advertisements.</li>
+        <li><strong>Diagnostics & Performance:</strong> Crash logs, app responsiveness metrics, and diagnostic technical data.</li>
+      </ul>
+      <p>
+        We do <strong>not</strong> sell your data to data brokers, and we do <strong>not</strong> perform cross-app tracking without explicit user consent via Apple's App Tracking Transparency framework where applicable.
+      </p>
+      <p>
+        For more information on how Google manages advertising data, please review the 
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--accent-mint); font-weight: 600;">Google Privacy & Terms for Advertising</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Data Retention & Deletion Rights</h2>
+      <p>
+        Because all your personal plant data is stored locally on your device, you have complete and absolute control over your information at all times:
+      </p>
+      <ul>
+        <li><strong>Deleting a Single Plant:</strong> Deleting a plant from "Ormanım" immediately and permanently removes all its care logs and associated photo files from your phone's storage.</li>
+        <li><strong>Complete Data Erasure:</strong> Deleting or uninstalling the PlantLog application from your device instantly and permanently removes all databases, settings, and cached assets. No trace remains on any remote server.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Children's Privacy (COPPA Compliance)</h2>
+      <p>
+        PlantLog is a safe, botanical hobby and houseplant care application suitable for all ages. We do not knowingly collect, solicit, or store personal information from children under the age of 13. If you believe any child has provided personal information to third-party ad networks through the app, please contact us immediately.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Your Rights (GDPR & CCPA / CPRA)</h2>
+      <p>
+        Under the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA):
+      </p>
+      <ul>
+        <li>You have the right to access, rectify, or erase your data at any time by simply viewing, modifying, or deleting records within the app.</li>
+        <li>Because we do not store your identity, IP address, or user accounts on central servers, we hold no personally identifiable records that can be linked to your identity.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update our Privacy Policy periodically to reflect app improvements or regulatory updates. Any changes will be posted on this page with an updated "Last Updated" date.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions, feedback, or concerns regarding this Privacy Policy or PlantLog's data practices, please reach out to us:
+      </p>
+      <ul style="list-style: none; margin-left: 0;">
+        <li>📧 <strong>Support Email:</strong> <a href="mailto:support@plantlogapp.com" style="color: var(--accent-mint);">support@plantlogapp.com</a></li>
+        <li>🌐 <strong>Developer GitHub:</strong> <a href="https://github.com/ProgrammerCrow" target="_blank" rel="noopener" style="color: var(--accent-mint);">github.com/ProgrammerCrow</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PlantLog. All rights reserved. • <a href="index.html">Home</a> • <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
+
